@@ -6,20 +6,33 @@ log, lands a glitching title plate, and fades into the workspace.
 
 [中文说明](README.zh-CN.md)
 
+[![npm](https://img.shields.io/npm/v/@shifu-hu/dsh-boot-sequence.svg)](https://www.npmjs.com/package/@shifu-hu/dsh-boot-sequence)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 ![preview](https://raw.githubusercontent.com/Shifu-HU/dsh-boot-sequence/main/docs/preview.png)
 
 ## Install
 
-### From a local folder
+Published on npm: **[@shifu-hu/dsh-boot-sequence](https://www.npmjs.com/package/@shifu-hu/dsh-boot-sequence)**
 
 ```bash
-plugin_manager install_bundle C:/path/to/dsh-boot-sequence
+# from the npm registry (recommended)
+plugin_manager install_bundle @shifu-hu/dsh-boot-sequence
+
+# pin a version
+plugin_manager install_bundle @shifu-hu/dsh-boot-sequence@1.0.0
 ```
 
 ### From Git
 
 ```bash
 plugin_manager install_bundle git+https://github.com/Shifu-HU/dsh-boot-sequence.git
+```
+
+### From a local folder
+
+```bash
+plugin_manager install_bundle C:/path/to/dsh-boot-sequence
 ```
 
 Restart the desktop app after installing. The Client module is scanned at

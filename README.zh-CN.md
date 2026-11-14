@@ -8,18 +8,31 @@ boot log，落到一个会抖动的标题牌，然后淡出进入工作区。
 
 ![预览](https://raw.githubusercontent.com/Shifu-HU/dsh-boot-sequence/main/docs/preview.png)
 
+[![npm](https://img.shields.io/npm/v/@shifu-hu/dsh-boot-sequence.svg)](https://www.npmjs.com/package/@shifu-hu/dsh-boot-sequence)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 ## 安装
 
-### 从本地目录
+已发布到 npm：**[@shifu-hu/dsh-boot-sequence](https://www.npmjs.com/package/@shifu-hu/dsh-boot-sequence)**
 
 ```bash
-plugin_manager install_bundle C:/path/to/dsh-boot-sequence
+# 从 npm 安装（推荐）
+plugin_manager install_bundle @shifu-hu/dsh-boot-sequence
+
+# 指定版本
+plugin_manager install_bundle @shifu-hu/dsh-boot-sequence@1.0.0
 ```
 
 ### 从 Git
 
 ```bash
 plugin_manager install_bundle git+https://github.com/Shifu-HU/dsh-boot-sequence.git
+```
+
+### 从本地目录
+
+```bash
+plugin_manager install_bundle C:/path/to/dsh-boot-sequence
 ```
 
 安装后需**重启桌面端**。Client 模块在启动时扫描，热安装不会立即生效。
