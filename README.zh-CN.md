@@ -20,7 +20,7 @@ boot log，落到一个会抖动的标题牌，然后淡出进入工作区。
 plugin_manager install_bundle @shifu-hu/dsh-boot-sequence
 
 # 指定版本
-plugin_manager install_bundle @shifu-hu/dsh-boot-sequence@1.0.0
+plugin_manager install_bundle @shifu-hu/dsh-boot-sequence@1.0.1
 ```
 
 ### 从 Git

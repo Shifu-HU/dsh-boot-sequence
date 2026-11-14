@@ -20,7 +20,7 @@ Published on npm: **[@shifu-hu/dsh-boot-sequence](https://www.npmjs.com/package/
 plugin_manager install_bundle @shifu-hu/dsh-boot-sequence
 
 # pin a version
-plugin_manager install_bundle @shifu-hu/dsh-boot-sequence@1.0.0
+plugin_manager install_bundle @shifu-hu/dsh-boot-sequence@1.0.1
 ```
 
 ### From Git
