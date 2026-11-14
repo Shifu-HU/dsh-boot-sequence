@@ -11,13 +11,31 @@
   "metadata": {
     "categories": {
       "appearance": {
-        "title": { "en": "Appearance", "zh": "外观" }
+        "title": {
+          "en": "Appearance",
+          "zh": "外观"
+        }
       }
     },
     "labels": {
-      "boot": { "title": { "en": "Boot", "zh": "开机" } },
-      "splash": { "title": { "en": "Splash", "zh": "启动画面" } },
-      "edex": { "title": { "en": "eDEX style", "zh": "eDEX 风格" } }
+      "boot": {
+        "title": {
+          "en": "Boot",
+          "zh": "开机"
+        }
+      },
+      "splash": {
+        "title": {
+          "en": "Splash",
+          "zh": "启动画面"
+        }
+      },
+      "edex": {
+        "title": {
+          "en": "eDEX style",
+          "zh": "eDEX 风格"
+        }
+      }
     }
   },
   "plugins": [
@@ -40,13 +58,23 @@
       },
       "metadata": {
         "category": "appearance",
-        "labels": ["boot", "splash", "edex"],
-        "keywords": ["boot sequence", "splash screen", "edex", "startup", "开机动画"]
+        "labels": [
+          "boot",
+          "splash",
+          "edex"
+        ],
+        "keywords": [
+          "boot sequence",
+          "splash screen",
+          "edex",
+          "startup",
+          "开机动画"
+        ]
       },
       "versions": [
         {
-          "version": "1.0.0",
-          "publishTimestamp": 1763211000,
+          "version": "1.0.1",
+          "publishTimestamp": 1794667702,
           "source": {
             "type": "npm",
             "registry": "https://registry.npmjs.org"
