@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Boot sequence",
+    "description": "Replays the eDEX-UI style boot animation as a full-screen overlay on workspace start."
+  }
+}

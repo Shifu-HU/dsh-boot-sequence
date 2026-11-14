@@ -1,0 +1,3 @@
+- insert:
+    - id: dsh-boot-sequence
+      name: '@shifu-hu/dsh-boot-sequence'

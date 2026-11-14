@@ -1,0 +1,39 @@
+{
+  "name": "@shifu-hu/dsh-boot-sequence",
+  "version": "1.0.0",
+  "description": "An eDEX-UI style boot sequence for the DeepSeek Harness Web UI.",
+  "private": false,
+  "type": "module",
+  "license": "MIT",
+  "author": "Shifu-HU <Shifu-HU@users.noreply.github.com>",
+  "homepage": "https://github.com/Shifu-HU/dsh-boot-sequence",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shifu-HU/dsh-boot-sequence.git"
+  },
+  "keywords": ["dsh", "deepseek-harness", "plugin", "boot", "edex", "splash"],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./assets/*": "./assets/*"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "assets/*",
+    "CREDITS.md"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  }
+}
