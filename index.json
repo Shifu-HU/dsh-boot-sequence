@@ -11,19 +11,61 @@
   "metadata": {
     "categories": {
       "appearance": {
-        "title": { "en": "Appearance", "zh": "外观" }
+        "title": {
+          "en": "Appearance",
+          "zh": "外观"
+        }
       },
       "integration": {
-        "title": { "en": "Integration", "zh": "集成" }
+        "title": {
+          "en": "Integration",
+          "zh": "集成"
+        }
+      },
+      "guardrails": {
+        "title": {
+          "en": "Guardrails",
+          "zh": "行为约束"
+        }
       }
     },
     "labels": {
-      "boot": { "title": { "en": "Boot", "zh": "开机" } },
-      "splash": { "title": { "en": "Splash", "zh": "启动画面" } },
-      "edex": { "title": { "en": "eDEX style", "zh": "eDEX 风格" } },
-      "mcp": { "title": { "en": "MCP", "zh": "MCP" } },
-      "cloudflare": { "title": { "en": "Cloudflare", "zh": "Cloudflare" } },
-      "skill": { "title": { "en": "Ships a skill", "zh": "附带 skill" } }
+      "boot": {
+        "title": {
+          "en": "Boot",
+          "zh": "开机"
+        }
+      },
+      "splash": {
+        "title": {
+          "en": "Splash",
+          "zh": "启动画面"
+        }
+      },
+      "edex": {
+        "title": {
+          "en": "eDEX style",
+          "zh": "eDEX 风格"
+        }
+      },
+      "mcp": {
+        "title": {
+          "en": "MCP",
+          "zh": "MCP"
+        }
+      },
+      "cloudflare": {
+        "title": {
+          "en": "Cloudflare",
+          "zh": "Cloudflare"
+        }
+      },
+      "skill": {
+        "title": {
+          "en": "Ships a skill",
+          "zh": "附带 skill"
+        }
+      }
     }
   },
   "plugins": [
@@ -46,8 +88,18 @@
       },
       "metadata": {
         "category": "appearance",
-        "labels": ["boot", "splash", "edex"],
-        "keywords": ["boot sequence", "splash screen", "edex", "startup", "开机动画"]
+        "labels": [
+          "boot",
+          "splash",
+          "edex"
+        ],
+        "keywords": [
+          "boot sequence",
+          "splash screen",
+          "edex",
+          "startup",
+          "开机动画"
+        ]
       },
       "versions": [
         {
@@ -82,13 +134,68 @@
       },
       "metadata": {
         "category": "integration",
-        "labels": ["mcp", "cloudflare", "skill"],
-        "keywords": ["mcp", "cloudflare", "code mode", "json schema", "permission skill"]
+        "labels": [
+          "mcp",
+          "cloudflare",
+          "skill"
+        ],
+        "keywords": [
+          "mcp",
+          "cloudflare",
+          "code mode",
+          "json schema",
+          "permission skill"
+        ]
       },
       "versions": [
         {
           "version": "1.1.0",
           "publishTimestamp": 1794668100,
+          "source": {
+            "type": "npm",
+            "registry": "https://registry.npmjs.org"
+          },
+          "engines": {
+            "dsh": ">=0.2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@shifu-hu/dsh-scope-guard",
+      "title": {
+        "en": "Scope guard",
+        "zh": "范围守卫"
+      },
+      "description": {
+        "en": "Installs a skill that keeps the assistant inside the scope you asked for: visible authorization citation, restate-and-confirm, and no guessing.",
+        "zh": "安装一个 skill，让助手只做你明确要求的事：外显引用授权、复述后确认、禁止瞎猜与范围蔓延。"
+      },
+      "icon": "https://raw.githubusercontent.com/Shifu-HU/scope-guard/main/icon.svg",
+      "author": "Shifu-HU",
+      "homepage": "https://github.com/Shifu-HU/scope-guard",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/Shifu-HU/scope-guard.git"
+      },
+      "metadata": {
+        "category": "guardrails",
+        "labels": [
+          "skill"
+        ],
+        "keywords": [
+          "skill",
+          "scope",
+          "guardrails",
+          "prompt",
+          "scope creep",
+          "范围守卫"
+        ]
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1794671286,
           "source": {
             "type": "npm",
             "registry": "https://registry.npmjs.org"
