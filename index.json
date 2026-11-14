@@ -70,7 +70,7 @@
   },
   "plugins": [
     {
-      "name": "@shifu-hu/dsh-boot-sequence",
+      "name": "dsh-edex-boot",
       "title": {
         "en": "Boot sequence",
         "zh": "开机动画"
@@ -103,8 +103,8 @@
       },
       "versions": [
         {
-          "version": "1.0.1",
-          "publishTimestamp": 1794667702,
+          "version": "1.0.0",
+          "publishTimestamp": 1794693403,
           "source": {
             "type": "npm",
             "registry": "https://registry.npmjs.org"
@@ -116,7 +116,7 @@
       ]
     },
     {
-      "name": "@shifu-hu/dsh-cloudflare-mcp",
+      "name": "dsh-cf-mcp",
       "title": {
         "en": "Cloudflare MCP",
         "zh": "Cloudflare MCP"
@@ -150,7 +150,7 @@
       "versions": [
         {
           "version": "1.1.0",
-          "publishTimestamp": 1794668100,
+          "publishTimestamp": 1794697219,
           "source": {
             "type": "npm",
             "registry": "https://registry.npmjs.org"
@@ -162,7 +162,7 @@
       ]
     },
     {
-      "name": "@shifu-hu/dsh-scope-guard",
+      "name": "dsh-scope-guard",
       "title": {
         "en": "Scope guard",
         "zh": "范围守卫"
@@ -195,7 +195,7 @@
       "versions": [
         {
           "version": "1.0.0",
-          "publishTimestamp": 1794671286,
+          "publishTimestamp": 1794697214,
           "source": {
             "type": "npm",
             "registry": "https://registry.npmjs.org"

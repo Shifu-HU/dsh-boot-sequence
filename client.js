@@ -8,7 +8,7 @@
 // tools/build-client.cjs substitutes the two placeholder tokens below; do not
 // edit the generated client.js by hand.
 window.__ModuleLoader__.load({
-  id: '@shifu-hu/dsh-boot-sequence',
+  id: 'dsh-edex-boot',
   factory(require) {
     const React = require('react');
     const h = React.createElement;
@@ -122,7 +122,7 @@ window.__ModuleLoader__.load({
     // This build exposes no `styles` builtin, so follow the shipped plugins.
     function insertStyles(css) {
       const tag = document.createElement('style');
-      tag.setAttribute('data-plugin-css', '@shifu-hu/dsh-boot-sequence/boot.css');
+      tag.setAttribute('data-plugin-css', 'dsh-edex-boot/boot.css');
       tag.textContent = css;
       document.head.appendChild(tag);
       return () => { tag.remove(); };
@@ -481,7 +481,7 @@ window.__ModuleLoader__.load({
     // in the package's own assets/ directory and be matched by an export.
     // The image is a monochrome line drawing traced from the mature character
     // sheet, so it carries no hue of its own.
-    const MASCOT_URL = '/plugins/@shifu-hu/dsh-boot-sequence/assets/mascot/whalegirl.webp';
+    const MASCOT_URL = '/plugins/dsh-edex-boot/assets/mascot/whalegirl.webp';
 
     function BootOverlay() {
       const [t, setT] = React.useState(0);
@@ -685,7 +685,7 @@ window.__ModuleLoader__.load({
         ctx.effect(
           () => ctx.slots.inject('shell.overlay', () => ctx.slots.register({
             name: 'shell.overlay',
-            id: 'dsh-boot-sequence',
+            id: 'dsh-edex-boot',
             // negative order: first in the overlay list, so the splash sits on
             // top of the toasts the host registers at order 0
             order: -1000,

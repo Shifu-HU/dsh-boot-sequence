@@ -1,4 +1,4 @@
-# dsh-boot-sequence
+# dsh-edex-boot
 
 [English](README.md) | 中文
 
@@ -6,33 +6,43 @@
 [eDEX-UI](https://github.com/GitSquared/edex-ui)：全屏启动画面，逐行打印 85 行
 boot log，落到一个会抖动的标题牌，然后淡出进入工作区。
 
-![预览](https://raw.githubusercontent.com/Shifu-HU/dsh-boot-sequence/main/docs/preview.png)
+![预览](https://raw.githubusercontent.com/Shifu-HU/dsh-edex-boot/main/docs/preview.png)
 
-[![npm](https://img.shields.io/npm/v/@shifu-hu/dsh-boot-sequence.svg)](https://www.npmjs.com/package/@shifu-hu/dsh-boot-sequence)
+[![npm](https://img.shields.io/npm/v/dsh-edex-boot.svg)](https://www.npmjs.com/package/dsh-edex-boot)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## 安装
 
-已发布到 npm：**[@shifu-hu/dsh-boot-sequence](https://www.npmjs.com/package/@shifu-hu/dsh-boot-sequence)**
+已发布到 npm：**[dsh-edex-boot](https://www.npmjs.com/package/dsh-edex-boot)**
+
+### 命令行安装
 
 ```bash
-# 从 npm 安装（推荐）
-plugin_manager install_bundle @shifu-hu/dsh-boot-sequence
+dsh plugin --profile desktop add dsh-edex-boot
+```
 
-# 指定版本
-plugin_manager install_bundle @shifu-hu/dsh-boot-sequence@1.0.1
+### 在会话内安装
+
+```
+plugin_manager install_bundle dsh-edex-boot
+```
+
+锁定版本（不希望自动升级时）：
+
+```bash
+dsh plugin --profile desktop add dsh-edex-boot@1.0.0
 ```
 
 ### 从 Git
 
 ```bash
-plugin_manager install_bundle git+https://github.com/Shifu-HU/dsh-boot-sequence.git
+dsh plugin --profile desktop add github:Shifu-HU/dsh-edex-boot
 ```
 
 ### 从本地目录
 
 ```bash
-plugin_manager install_bundle C:/path/to/dsh-boot-sequence
+dsh plugin --profile desktop add C:/path/to/dsh-edex-boot
 ```
 
 安装后需**重启桌面端**。Client 模块在启动时扫描，热安装不会立即生效。
@@ -57,7 +67,7 @@ plugin_manager install_bundle C:/path/to/dsh-boot-sequence
 ## 卸载
 
 ```bash
-plugin_manager remove_bundle @shifu-hu/dsh-boot-sequence
+plugin_manager remove_bundle dsh-edex-boot
 ```
 
 或在 **设置 → 插件** 中关闭。
@@ -69,7 +79,7 @@ plugin_manager remove_bundle @shifu-hu/dsh-boot-sequence
 | 装完没反应 | Client 模块启动时才扫描 | 重启桌面端 |
 | 白屏，没有 boot log | 模块加载失败 | 看 DevTools Console 是否有 `slot entry crashed` |
 | 没有声音 | 浏览器自动播放策略 | 播放期间点一下页面 |
-| 鲸鱼娘不显示 | 资源路由被拦 | 确认 `/plugins/@shifu-hu/dsh-boot-sequence/assets/mascot/whalegirl.webp` 返回 200 |
+| 鲸鱼娘不显示 | 资源路由被拦 | 确认 `/plugins/dsh-edex-boot/assets/mascot/whalegirl.webp` 返回 200 |
 | 每次切换页面都重播 | 不应发生 | 请反馈，卸载守卫在 `client.js` 中 |
 
 ## 从源码构建

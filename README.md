@@ -1,4 +1,4 @@
-# dsh-boot-sequence
+# dsh-edex-boot
 
 An [eDEX-UI](https://github.com/GitSquared/edex-ui) style boot sequence for the
 **the agent runtime** Web UI: a full-screen splash that prints an 85-line boot
@@ -6,33 +6,43 @@ log, lands a glitching title plate, and fades into the workspace.
 
 [中文说明](README.zh-CN.md)
 
-[![npm](https://img.shields.io/npm/v/@shifu-hu/dsh-boot-sequence.svg)](https://www.npmjs.com/package/@shifu-hu/dsh-boot-sequence)
+[![npm](https://img.shields.io/npm/v/dsh-edex-boot.svg)](https://www.npmjs.com/package/dsh-edex-boot)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-![preview](https://raw.githubusercontent.com/Shifu-HU/dsh-boot-sequence/main/docs/preview.png)
+![preview](https://raw.githubusercontent.com/Shifu-HU/dsh-edex-boot/main/docs/preview.png)
 
 ## Install
 
-Published on npm: **[@shifu-hu/dsh-boot-sequence](https://www.npmjs.com/package/@shifu-hu/dsh-boot-sequence)**
+Published on npm: **[dsh-edex-boot](https://www.npmjs.com/package/dsh-edex-boot)**
+
+### From the command line
 
 ```bash
-# from the npm registry (recommended)
-plugin_manager install_bundle @shifu-hu/dsh-boot-sequence
+dsh plugin --profile desktop add dsh-edex-boot
+```
 
-# pin a version
-plugin_manager install_bundle @shifu-hu/dsh-boot-sequence@1.0.1
+### From inside a session
+
+```
+plugin_manager install_bundle dsh-edex-boot
+```
+
+Pin a version when you do not want automatic upgrades:
+
+```bash
+dsh plugin --profile desktop add dsh-edex-boot@1.0.0
 ```
 
 ### From Git
 
 ```bash
-plugin_manager install_bundle git+https://github.com/Shifu-HU/dsh-boot-sequence.git
+dsh plugin --profile desktop add github:Shifu-HU/dsh-edex-boot
 ```
 
 ### From a local folder
 
 ```bash
-plugin_manager install_bundle C:/path/to/dsh-boot-sequence
+dsh plugin --profile desktop add C:/path/to/dsh-edex-boot
 ```
 
 Restart the desktop app after installing. The Client module is scanned at
@@ -61,7 +71,7 @@ itself.
 ## Uninstall
 
 ```bash
-plugin_manager remove_bundle @shifu-hu/dsh-boot-sequence
+plugin_manager remove_bundle dsh-edex-boot
 ```
 
 Or toggle it off in **Settings → Plugins**.
@@ -73,7 +83,7 @@ Or toggle it off in **Settings → Plugins**.
 | Nothing appears after install | Client modules are scanned at startup | Restart the desktop app |
 | Blank screen instead of the log | Module failed to load | Check DevTools console for `slot entry crashed` |
 | No sound | Browser autoplay policy | Click the page once during the animation |
-| Mascot missing | Asset route blocked | Confirm `/plugins/@shifu-hu/dsh-boot-sequence/assets/mascot/whalegirl.webp` returns 200 |
+| Mascot missing | Asset route blocked | Confirm `/plugins/dsh-edex-boot/assets/mascot/whalegirl.webp` returns 200 |
 | Animation replays every navigation | Should not happen | Report it; the unmount guard is in `client.js` |
 
 ## Build from source

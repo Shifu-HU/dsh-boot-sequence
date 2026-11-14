@@ -1,6 +1,6 @@
 {
-  "name": "@shifu-hu/dsh-boot-sequence",
-  "version": "1.0.1",
+  "name": "dsh-edex-boot",
+  "version": "1.0.0",
   "description": "An eDEX-UI style boot sequence for the DeepSeek Harness Web UI.",
   "private": false,
   "type": "module",
